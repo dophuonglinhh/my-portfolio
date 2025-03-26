@@ -1,6 +1,6 @@
 "use client";
 
-import { FaArrowUpRightFromSquare, FaLocationArrow } from "react-icons/fa6";
+import { FaArrowRight, FaArrowUpRightDots, FaArrowUpRightFromSquare, FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
@@ -9,7 +9,7 @@ const RecentProjects = () => {
   return (
     <div id="projects" className="py-10">
       {/* <h1 className="heading text-purple">My Projects</h1> */}
-      <p className="text-start text-lg mb-5 text-purple font-medium">My Projects</p>
+      <p className="text-start text-lg mb-5 text-purple font-semibold">My Projects</p>
       <div className="flex flex-wrap items-center justify-center lg:justify-start md:justify-start gap-16">
         {projects.map((item) => (
           <div
@@ -31,7 +31,7 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold text-lg line-clamp-1">
+              <h1 className="font-semibold text-lg line-clamp-1 transition">
                 {item.title}
               </h1>
 
@@ -65,14 +65,14 @@ const RecentProjects = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex justify-center items-center z-10"
+                    className="flex justify-center items-center z-10 "
                   >
                     {/* <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                       Check Behance
                     </p> */}
                     <FaArrowUpRightFromSquare
-                      className="ms-3"
-                      color="#CBACF9"
+                      className="m-3 size-4"
+                      color="white"
                     />
                   </a>
                 </div>
