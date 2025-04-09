@@ -11,19 +11,26 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import About from "@/components/About";
 import Name from "@/components/Name";
+
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
+    <main className="relative bg-black-100 w-full overflow-hidden scroll-smooth">
+      <div className="mx-auto sm:px-10 px-5 sm:max-w-7xl lg:max-w-none lg:px-0">
         <FloatingNav navItems={navItems} />
-        <Name />
-        <About />
-        {/* <Grid /> */}
-        <RecentProjects />
-        {/* <Clients /> */}
-        {/* <Experience /> */}
-        {/* <Approach /> */}
-        <Footer />
+        <div className="flex flex-col lg:flex-row w-full h-auto lg:h-screen">
+          {/* Left Column: Name component */}
+          <div className="lg:w-1/3">
+            <div className="sticky top-0 h-auto lg:h-screen">
+              <Name />
+            </div>
+          </div>
+          {/* Right Column: About, RecentProjects, and Footer */}
+          <div className="lg:w-2/3 lg:overflow-y-auto lg:px-5">
+            <About />
+            <RecentProjects />
+            <Footer />
+          </div>
+        </div>
       </div>
     </main>
   );

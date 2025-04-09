@@ -6,8 +6,8 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col justify-center">
-      <p className="text-start text-lg text-purple font-semibold md:mt-10 my-5">
+    <div id="about" className="flex flex-col justify-center mt-20">
+      <p className="text-start text-lg text-purple font-semibold mb-5">
         About
       </p>
 

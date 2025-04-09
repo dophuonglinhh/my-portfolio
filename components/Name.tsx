@@ -3,7 +3,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Name = () => {
   return (
-    <div className="pt-28">
+    <div className="pt-28 lg:pt-0">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
