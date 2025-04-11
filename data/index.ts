@@ -207,12 +207,13 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/figma.svg",
-    link: "https://www.figma.com/@dophuonglinhh",
-  },
-  {
-    id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/dophuonglinhh",
   },
+  {
+    id: 3,
+    img: "/figma.svg",
+    link: "https://www.figma.com/@dophuonglinhh",
+  },
+  
 ];

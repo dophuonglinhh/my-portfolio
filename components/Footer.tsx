@@ -36,9 +36,15 @@ const Footer = () => {
               href={info.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="group w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <img src={info.img} alt="icons" width={20} height={20} />
+              <img
+                src={info.img}
+                alt="icons"
+                width={20}
+                height={20}
+                className="transition-all duration-200 ease-in-out [filter:brightness(0)_saturate(100%)_invert(0.5)] group-hover:[filter:brightness(0)_saturate(100%)_invert(1)]"
+              />
             </a>
           ))}
         </div>
