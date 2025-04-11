@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-10" id="contact">
+    <footer className="w-full pt-20 pb-10" id="contact">
       {/* <p className="text-start text-purple md:mt-10 my-5">Contact Me</p> */}
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
