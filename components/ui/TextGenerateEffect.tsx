@@ -36,8 +36,8 @@ export const TextGenerateEffect = ({
               // change here if idx is greater than 3, change the text color to #CBACF9
               className={` ${
                 (wordsArray.length > 3 && idx < 3) || idx > 6
-                  ? "text-purple"
-                  : "dark:text-white text-black"
+                  ? "text-purple font-bold"
+                  : "text-primary"
               } opacity-0`}
             >
               {word}{" "}

@@ -13,7 +13,7 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center lg:justify-start md:justify-start gap-16">
         {projects.map((item) => (
           <div
-            className="h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="group h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer title={item.title} href={item.link}>
@@ -31,14 +31,13 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-semibold text-lg line-clamp-1 transition">
+              <h1 className="font-semibold text-lg line-clamp-1 transition text-primary group-hover:text-purple">
                 {item.title}
               </h1>
 
               <p
-                className="font-light text-sm line-clamp-2"
+                className="font-light text-sm line-clamp-2 text-muted-foreground"
                 style={{
-                  color: "#BEC1DD",
                   margin: "1vh 0",
                 }}
               >
@@ -50,7 +49,7 @@ const RecentProjects = () => {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-foreground/[.2] rounded-full bg-icon lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -65,14 +64,13 @@ const RecentProjects = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex justify-center items-center z-10 "
+                    className="flex justify-center items-center z-10"
                   >
                     {/* <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                       Check Behance
                     </p> */}
                     <FaArrowUpRightFromSquare
-                      className="m-3 size-4"
-                      color="white"
+                      className="m-3 size-4 text-primary group-hover:text-purple transition-transform duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1"
                     />
                   </a>
                 </div>

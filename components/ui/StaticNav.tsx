@@ -42,8 +42,6 @@ export const StaticNav = ({
   }, [menus]);
   
   return (
-    // Add a small left padding (px-5) or remove it if you want
-    // to rely only on a parent container's spacing
     <nav className="flex flex-col gap-5 px-5 lg:px-0">
       {navItems.map((navItem, idx) => (
         <Link
@@ -51,9 +49,9 @@ export const StaticNav = ({
           href={navItem.link}
           // Inline-block so the text can smoothly translate
           className={cn(
-            "inline-block text-base text-slate-300 transform transition-all duration-100",
+            "inline-block text-base text-muted-foreground transform transition-all duration-100",
             // on hover
-            "hover:translate-x-2 hover:font-bold hover:text-white",
+            "hover:translate-x-2 hover:font-bold hover:text-primary",
             // on active  
             `${activeSection == navItem.name.toLowerCase() ? "font-bold text-purple translate-x-2" : ""}`      
           )}

@@ -12,21 +12,27 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import About from "@/components/About";
 import Name from "@/components/Name";
 import StaticNav from "@/components/ui/StaticNav";
+import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 w-full overflow-hidden scroll-smooth">
+    <main className="relative bg-background w-full overflow-hidden scroll-smooth">
       <div className="mx-auto sm:px-10 px-5 sm:max-w-7xl lg:max-w-none lg:px-0">
         <div className="lg:hidden">
           <FloatingNav navItems={navItems} />
         </div>
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-screen">
           {/* Left Column: Name component */}
-          <div className="lg:w-2/5 flex flex-col items-center">
-            <div className="sticky top-0 h-auto lg:h-screen ">
-              <Name />
-              <div className="hidden lg:block mt-4">
-                <StaticNav navItems={navItems} />
+          <div className="lg:w-2/5 flex flex-col items-center justify-between">
+            <div className="sticky top-0 h-auto lg:h-screen flex flex-col justify-between">
+              <div>
+                <Name />
+                <div className="hidden lg:block mt-16">
+                  <StaticNav navItems={navItems} />
+                </div>
+              </div>
+              <div className="py-10">
+                <ThemeSwitcher />
               </div>
             </div>
           </div>
