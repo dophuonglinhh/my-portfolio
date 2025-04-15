@@ -13,8 +13,11 @@ import About from "@/components/About";
 import Name from "@/components/Name";
 import StaticNav from "@/components/ui/StaticNav";
 import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
+import { useTheme } from "next-themes";
 
 const Home = () => {
+  const { resolvedTheme } = useTheme();
+
   return (
     <main className="relative bg-background w-full overflow-hidden scroll-smooth">
       <div className="mx-auto sm:px-10 px-5 sm:max-w-7xl lg:max-w-none lg:px-0">
@@ -32,7 +35,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="py-10">
-                <ThemeSwitcher />
+                <ThemeSwitcher currentTheme={resolvedTheme || "dark"} />
               </div>
             </div>
           </div>
