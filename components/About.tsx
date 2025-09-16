@@ -7,9 +7,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 const About = () => {
   return (
     <div id="about" className="flex flex-col justify-center pt-20">
-      <p className="text-start text-lg text-purple font-semibold mb-5">
-        About
-      </p>
+      <p className="text-start text-lg text-purple font-semibold mb-5">About</p>
 
       <p className="text-start md:tracking-wider mb-4 text-sm">
         Hi, I&apos;m a front-end developer passionate about building clean,
@@ -26,7 +24,8 @@ const About = () => {
       </p>
       <p className="text-start md:tracking-wider mb-4 text-sm">
         In my free time, I enjoy playing sports like badminton and pickleball,
-        exploring cute cafes around the city, and binge-watching K-dramas at home.
+        discovering cute cafes around the city, and practicing and learning new
+        piano pieces.
       </p>
       <a
         href="/Linh Do CV.pdf"
