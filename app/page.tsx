@@ -3,7 +3,6 @@
 import { navItems } from "@/data";
 
 import Grid from "@/components/Grid";
-import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
@@ -14,6 +13,9 @@ import Name from "@/components/Name";
 import StaticNav from "@/components/ui/StaticNav";
 import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 import { useTheme } from "next-themes";
+import Contact from "@/components/Contact";
+import Footer from "@/components/ui/Footer";
+import SocialMedia from "@/components/SocialMedia";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -34,8 +36,9 @@ const Home = () => {
                   <StaticNav navItems={navItems} />
                 </div>
               </div>
-              <div className="py-10">
+              <div className="py-10 flex justify-between items-center">
                 <ThemeSwitcher currentTheme={resolvedTheme || "dark"} />
+                <SocialMedia />
               </div>
             </div>
           </div>
@@ -48,8 +51,9 @@ const Home = () => {
               <RecentProjects />
             </section>
             <section id="contact">
-              <Footer />
+              <Contact />
             </section>
+            <Footer />
           </div>
         </div>
       </div>
