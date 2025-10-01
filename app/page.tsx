@@ -22,6 +22,11 @@ const Home = () => {
 
   return (
     <main className="relative bg-background w-full overflow-hidden scroll-smooth">
+      {/* Theme Switcher - Fixed on mobile, inline on desktop */}
+      <div className="lg:hidden fixed top-5 right-5 z-[100]">
+        <ThemeSwitcher currentTheme={resolvedTheme || "dark"} />
+      </div>
+
       <div className="mx-auto sm:px-10 px-5 sm:max-w-7xl lg:max-w-none lg:px-0">
         <div className="lg:hidden">
           <FloatingNav navItems={navItems} />
@@ -36,7 +41,8 @@ const Home = () => {
                   <StaticNav navItems={navItems} />
                 </div>
               </div>
-              <div className="py-10 flex justify-between items-center">
+              {/* Desktop only: Theme switcher and social media */}
+              <div className="hidden lg:flex py-10 justify-between items-center">
                 <ThemeSwitcher currentTheme={resolvedTheme || "dark"} />
                 <SocialMedia />
               </div>

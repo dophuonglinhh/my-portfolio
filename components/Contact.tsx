@@ -1,6 +1,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
+import SocialMedia from "./SocialMedia";
 
 const Contact = () => {
   return (
@@ -21,6 +22,11 @@ const Contact = () => {
             position="right"
           />
         </a>
+
+        {/* Social Media - shown on mobile */}
+        <div className="lg:hidden">
+          <SocialMedia />
+        </div>
       </div>
     </div>
   );

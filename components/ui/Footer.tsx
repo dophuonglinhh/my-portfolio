@@ -22,7 +22,7 @@ const Footer = () => {
         <p className="text-sm text-muted-foreground mb-4 tracking-wider uppercase">
           Built with
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-6">
           {techStack.map((tech) => (
             <a
               key={tech.name}
@@ -38,7 +38,7 @@ const Footer = () => {
                 height={20}
                 className="transition-all duration-200"
               />
-              <span className="text-xs md:text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors">
+              <span className="text-xs md:text-sm font-medium text-white/80 group-hover:text-white transition-colors">
                 {tech.name}
               </span>
             </a>
