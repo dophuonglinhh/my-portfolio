@@ -17,12 +17,16 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/ui/Footer";
 import SocialMedia from "@/components/SocialMedia";
 import Education from "@/components/Education";
+import CursorGlow from "@/components/ui/CursorGlow";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
 
   return (
     <main className="relative bg-background w-full overflow-hidden scroll-smooth">
+      {/* Cursor Glow Effect */}
+      <CursorGlow />
+
       {/* Theme Switcher - Fixed on mobile, inline on desktop */}
       <div className="lg:hidden fixed top-5 right-5 z-[100]">
         <ThemeSwitcher currentTheme={resolvedTheme || "dark"} />
