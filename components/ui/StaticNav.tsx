@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const menus = ["about", "projects", "contact"]
+const menus = ["about", "education", "projects", "contact"]
 // Reuse the same props as your FloatingNav
 export const StaticNav = ({
   navItems,

@@ -16,6 +16,7 @@ import { useTheme } from "next-themes";
 import Contact from "@/components/Contact";
 import Footer from "@/components/ui/Footer";
 import SocialMedia from "@/components/SocialMedia";
+import Education from "@/components/Education";
 
 const Home = () => {
   const { resolvedTheme } = useTheme();
@@ -52,6 +53,9 @@ const Home = () => {
           <div className="lg:w-3/5 lg:overflow-y-auto lg:px-5">
             <section id="about">
               <About />
+            </section>
+            <section id="education">
+              <Education />
             </section>
             <section id="projects">
               <RecentProjects />

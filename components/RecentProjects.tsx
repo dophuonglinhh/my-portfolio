@@ -1,15 +1,22 @@
 "use client";
 
-import { FaArrowRight, FaArrowUpRightDots, FaArrowUpRightFromSquare, FaLocationArrow } from "react-icons/fa6";
+import {
+  FaArrowRight,
+  FaArrowUpRightDots,
+  FaArrowUpRightFromSquare,
+  FaLocationArrow,
+} from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div id="projects" className="pt-10">
+    <div id="projects" className="pt-20">
       {/* <h1 className="heading text-purple">My Projects</h1> */}
-      <p className="text-start text-lg text-purple font-semibold">My Projects</p>
+      <p className="text-start text-lg text-purple font-semibold">
+        My Projects
+      </p>
       <div className="flex flex-wrap items-center justify-center lg:justify-start md:justify-start gap-16">
         {projects.map((item) => (
           <div
@@ -69,9 +76,7 @@ const RecentProjects = () => {
                     {/* <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                       Check Behance
                     </p> */}
-                    <FaArrowUpRightFromSquare
-                      className="m-3 size-4 text-primary group-hover:text-purple transition-transform duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1"
-                    />
+                    <FaArrowUpRightFromSquare className="m-3 size-4 text-primary group-hover:text-purple transition-transform duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </a>
                 </div>
               </div>
